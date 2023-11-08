@@ -35,12 +35,12 @@ ul li a:hover {
   color: rgb(99, 96, 96);
 }
 .container {
-  margin: 80px auto;
-  padding: 20px 80px 80px;
+  margin: 50px auto;
+  padding: 20px 80px ;
   width: 500px;
   border-radius: 50px 50px;
-  color: azure;
-  background-color: rgb(40, 40, 40);
+  color:black;
+  background-color:rgba(40, 40, 40,.1);
 }
 .container h1 {
   padding: 12px;
@@ -51,14 +51,20 @@ ul li a:hover {
 @media screen and (max-width: 660px) {
   .container {
     width: 200px;
-    padding: 0px 90px 70px 20px;
+    padding: 0px   70px 30px 20px ;
     font-size: 13px;
+  }
+  nav{
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 350px) {
   .container {
     width: 200px;
     padding: 0px 72px 12px 8px;
+  }
+  nav{
+    flex-direction: column;
   }
 }
 .btn {
@@ -68,4 +74,10 @@ ul li a:hover {
 }
 .btn:hover {
   border: 2px solid green;
+}
+#results ::first-letter{
+text-transform:uppercase;
+}
+.container2{
+  margin: 15px;
 }
